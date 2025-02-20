@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'sfprodisplay';
-    src: url('/fonts/SF-Pro-Display-Medium.otf') format('otf');
+    src: url('./fonts/SF-Pro-Display-Medium.otf') format('otf');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'sfprodisplay';
-    src: url('/fonts/SF-Pro-Display-Bold.otf') format('otf');
+    src: url('./fonts/SF-Pro-Display-Bold.otf') format('otf');
     font-weight: 700;
     font-style: normal;
 }
@@ -25,7 +25,7 @@ h5 {
 body {
     background:
             linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-            url('/image/background-livingroom.jpg');
+            url('./image/background-livingroom.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
