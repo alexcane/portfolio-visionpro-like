@@ -1,0 +1,28 @@
+.left {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 250px 1fr;
+    justify-items: center;
+}
+
+.side-menu {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 50px;
+    border-radius: 50px;
+    display: grid;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: none;
+    font-size: 1.5rem;
+    color: darkgrey;
+}
+
+.side-menu span:nth-child(1) {
+    border-bottom: 2px solid;
+}
