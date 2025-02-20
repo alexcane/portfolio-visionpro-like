@@ -24,7 +24,7 @@ h5 {
 
 body {
     background:
-            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
             url('./image/background-livingroom.jpg');
     background-size: cover;
     background-position: center;
