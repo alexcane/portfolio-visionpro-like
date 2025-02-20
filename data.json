@@ -1,0 +1,204 @@
+{
+  "profile": {
+    "firstname": "Alexandre",
+    "lastname": "Cane",
+    "address": "11 rue des places",
+    "zip": "87800",
+    "city": "Saint-Hilaire-les-Places",
+    "phone": "06 70 95 22 92",
+    "birthday": "1986-09-25",
+    "engaged": true,
+    "children" : [1,2,3],
+    "driver_license": ["permis B"],
+    "vehicle": ["véhicule personnel"]
+  },
+  "softskill": [
+    {
+      "title": "Gestion de projet",
+      "details": [
+        "prise de décision",
+        "responsabilité",
+        "lucidité"
+      ]
+    },{
+      "title": "Relations humaines",
+      "details": [
+        "facilité d'adaptation",
+        "négociation",
+        "réseau"
+      ]
+    },{
+      "title": "Vision économique",
+      "details": [
+        "comptabilité",
+        "finance",
+        "juridique"
+      ]
+    },{
+      "title": "Stratégie d'évolution",
+      "details": [
+        "veille technologique",
+        "formation",
+        "curiosité"
+      ]
+    }
+  ],
+  "hardskill": [
+    {
+      "title": "Languages",
+      "details": [
+        {
+          "label": "PHP",
+          "icon_url": "https://img.icons8.com/?size=18&id=anECpXcEIboQ&format=png",
+          "level": 95
+        },
+        {
+          "label": "MySQL",
+          "icon_url": "https://img.icons8.com/?size=18&id=UFXRpPFebwa2&format=png",
+          "level":  95
+        },
+        {
+          "label": "Javascript",
+          "icon_url": "https://img.icons8.com/?size=18&id=108784&format=png",
+          "level":  85
+        },
+        {
+          "label": "HTML",
+          "icon_url": "https://img.icons8.com/?size=18&id=20909&format=png",
+          "level":  85
+        },
+        {
+          "label": "Python",
+          "icon_url": "https://img.icons8.com/?size=18&id=13441&format=png",
+          "level":  75
+        },
+        {
+          "label": "C#",
+          "icon_url": "https://img.icons8.com/?size=18&id=55251&format=png",
+          "level":  70
+        },
+        {
+          "label": "Swift",
+          "icon_url": "https://img.icons8.com/?size=18&id=24465&format=png",
+          "level":  50
+        },
+        {
+          "label": "Java",
+          "icon_url": "https://img.icons8.com/?size=18&id=13679&format=png",
+          "level":  35
+        }
+      ]
+    },{
+      "title": "Frameworks",
+      "details": [
+        "Symfony",
+        "Bootstrap",
+        "JQuery",
+        "ObjetsMetiers SAGE 100c",
+        "Principaux frameworks Apple et Android"
+      ]
+    },{
+      "title": "CMS",
+      "details": [
+        "Shopify + Shopify API",
+        "Wordpress",
+        "Prestashop",
+        "Joomla"
+      ]
+    },{
+      "title": "IDE / ERP / Divers",
+      "details": [
+        "PhpStorm",
+        "SAGE 100c",
+        "Git",
+        "Xcode",
+        "Android Studio",
+        "Figma",
+        "Photoshop",
+        "Final Cut"
+      ]
+    }
+  ],
+  "langage": [
+    {
+      "label": "Anglais",
+      "flag": "\uD83C\uDDEC\uD83C\uDDE7",
+      "level": "parlé et écrit"
+    },
+    {
+      "label": "Espagnole",
+      "flag": "\uD83C\uDDEA\uD83C\uDDF8",
+      "level": "parlé"
+    }
+  ],
+  "experience": [
+    {
+      "from": "Depuis mai 2019",
+      "to": "",
+      "label": "Salarié Broussaud Textiles",
+      "location": "Les Cars (87)",
+      "details": [
+        "Développeur informatique",
+        "- webapp de gestion de production industriel",
+        "- automatisation des traitements de documents de ventes et d’achats",
+        "- webservice C# ObjetsMetiers SAGE 100c"
+      ]
+    },
+    {
+      "from": "Depuis 2017",
+      "to": "",
+      "label": "Auto-entrepreneur Linkidev",
+      "location": "Saint-Hilaire-les-Places (87)",
+      "details": [
+        "Développeur digital",
+        "- webapp de gestion clientèle, réservation, statistiques financières et comptabilité",
+        "- webapp de gestion de projet audiovisuel (salarié, note de frais, facturation, statistiques)",
+        "- application native iOS / Android de facturation client par scanne de code barre"
+      ]
+    },
+    {
+      "from": "2016",
+      "to": "2018",
+      "label": "Restaurant Municipal de la mairie de Limoges",
+      "location": "Limoges (87)",
+      "details": ["Gérant et chef de cuisine"]
+    },
+    {
+      "from": "2010",
+      "to": "2016",
+      "label": "Propriétaire du restaurant \"Les Chaumières\"",
+      "location": "Nexon (87)",
+      "details": ["Gérant et chef de cuisine"]
+    }
+  ],
+  "training_background": [
+    {
+      "from": "2021",
+      "to": "2021",
+      "label": "MOOC",
+      "details": "Initiation à la RGPD CNIL"
+    },
+    {
+      "from": "2017",
+      "to": "2018",
+      "label": "MOOC",
+      "details": "Xcode (Swift) / Android Studio (Kotlin) / PHP / Symfony / SQL / Java / Git"
+    },
+    {
+      "from": "2009",
+      "to": "2009",
+      "label": "B.T.S. H.-R. Gestion et Management",
+      "details": "Lycée des métiers Jean MONNET – Limoges (87)"
+    }
+  ],
+  "interests": [
+    "Les nouvelles technologies, les travaux d’intérieur et les excursions",
+    "Sports : la course à pied, le rugby, le tennis, le vélo.",
+    "Concours :",
+    "- Candidat du Meilleur Menu de France 2014 – TF1",
+    "- Jeune Talent 2014 – Gault & Millau",
+    "- Finaliste au Concours Général des Métiers session 2007 – Education Nationale",
+    "- Meilleur cuisinier cunicole 2006 – Confrérie des Chevaliers de la Rabouillère",
+    "- Finaliste nationale au Concours OFIMER 2005 – OFIMER"
+  ]
+}
