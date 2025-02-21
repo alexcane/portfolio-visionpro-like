@@ -23,6 +23,6 @@
     color: darkgrey;
 }
 
-.side-menu span:nth-child(1) {
-    border-bottom: 2px solid;
+.side-menu a:nth-child(1) {
+    border-bottom: 2px solid darkgrey;
 }
