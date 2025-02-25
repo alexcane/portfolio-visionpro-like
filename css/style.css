@@ -108,6 +108,11 @@ body {
     height: 100%;
 }
 
+.horizontal-split {
+    display: grid;
+    grid-gap: 15px;
+}
+
 .card-widget {
     display: grid;
     grid-template-columns: 1fr;

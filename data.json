@@ -53,24 +53,24 @@
           "level": 95
         },
         {
-          "label": "MySQL",
+          "label": "MS-SQL / MySQL",
           "icon_url": "https://img.icons8.com/?size=18&id=UFXRpPFebwa2&format=png",
-          "level":  95
+          "level": 95
         },
         {
           "label": "Javascript",
           "icon_url": "https://img.icons8.com/?size=18&id=108784&format=png",
-          "level":  85
+          "level": 85
         },
         {
           "label": "HTML",
           "icon_url": "https://img.icons8.com/?size=18&id=20909&format=png",
-          "level":  85
+          "level": 85
         },
         {
           "label": "Python",
           "icon_url": "https://img.icons8.com/?size=18&id=13441&format=png",
-          "level":  75
+          "level": 75
         },
         {
           "label": "C#",
@@ -80,30 +80,66 @@
         {
           "label": "Swift",
           "icon_url": "https://img.icons8.com/?size=18&id=24465&format=png",
-          "level":  50
+          "level": 50
         },
         {
           "label": "Java",
           "icon_url": "https://img.icons8.com/?size=18&id=13679&format=png",
-          "level":  35
+          "level": 35
         }
       ]
     },{
       "title": "Frameworks",
       "details": [
-        "Symfony",
-        "Bootstrap",
-        "JQuery",
-        "ObjetsMetiers SAGE 100c",
-        "Principaux frameworks Apple et Android"
+        {
+          "label": "Symfony",
+          "icon_url": "https://img.icons8.com/?size=18&id=jpa398oAm0WY&format=png",
+          "version": "from 4.x to 7.2"
+        },
+        {
+          "label": "Bootstrap",
+          "icon_url": "https://img.icons8.com/?size=18&id=ZMc42tPbG32H&format=png",
+          "version": "5.3"
+        },
+        {
+          "label": "JQuery",
+          "icon_url": "https://img.icons8.com/?size=18&id=WwZWcUrK4wU8&format=png",
+          "version": "3.7"
+        },
+        {
+          "label": "ObjetsMetiers SAGE 100c",
+          "icon_url": "https://img.icons8.com/?size=18&id=13679&format=png",
+          "version": "from v5 to v10"
+        },
+        {
+          "label": "Principaux frameworks Apple et Android",
+          "icon_url": "https://img.icons8.com/?size=18&id=79115&format=png",
+          "version": "from v5 to v10"
+        }
       ]
     },{
       "title": "CMS",
       "details": [
-        "Shopify + Shopify API",
-        "Wordpress",
-        "Prestashop",
-        "Joomla"
+        {
+          "label": "Shopify + Shopify API",
+          "icon_url": "",
+          "xp": "2020"
+        },
+        {
+          "label": "Prestashop",
+          "icon_url": "",
+          "xp": "2016"
+        },
+        {
+          "label": "Wordpress",
+          "icon_url": "",
+          "xp": "2013"
+        },
+        {
+          "label": "Joomla",
+          "icon_url": "",
+          "xp": "2007"
+        }
       ]
     },{
       "title": "IDE / ERP / Divers",

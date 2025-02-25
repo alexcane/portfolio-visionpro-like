@@ -25,7 +25,7 @@ function feedLanguageSkill(language)
             let pourcent = obj.level;
 
             return "<li><div class='progress-bar' style='width: "+ pourcent +"%'>" +
-                "</div><img class='rounded-icon' src='" + url + "' alt='" + (label).toLowerCase() + "-logo'/><span style='z-index: 1'>" + label + "</span></li>";
+                "</div><img class='rounded-icon' src='" + url + "' alt='logo " + (label).toLowerCase() + "'/><span style='z-index: 1'>" + label + "</span></li>";
         })
         .reduce(function (prev, item) {
             return prev + item;
@@ -37,8 +37,14 @@ function feedFrameworkSkill(framework)
 {
     let el = document.getElementById('skill-framework');
     el.innerHTML = (framework.details)
-        .map(function (item) {
-            return "<li>"+ item +"</li>";
+        .map(function (obj) {
+            let url = obj.icon_url;
+            let label = obj.label;
+            let version = obj.version;
+
+            // return "<li><img class='rounded-icon' src='" + url + "' alt='logo " + (label).toLowerCase() + "'/>" +
+            return "<li><h6>"+ label +"</h6>" +
+                "<span>"+ version +"</span></li>";
         })
         .reduce(function (prev, item) {
             return prev + item;
@@ -48,10 +54,17 @@ function feedFrameworkSkill(framework)
 
 function feedCmsSkill(cms)
 {
+    let today = new Date().getFullYear();
     let el = document.getElementById('skill-cms');
     el.innerHTML = (cms.details)
-        .map(function (item) {
-            return "<li>"+ item +"</li>";
+        .map(function (obj) {
+            let url = obj.icon_url;
+            let label = obj.label;
+            let experience = today - obj.xp;
+
+            // return "<li><img class='rounded-icon' src='" + url + "' alt='logo " + (label).toLowerCase() + "'/>" +
+            return "<li><h6>"+ label +"</h6>" +
+                "<span>xp: "+ experience +" ans</span></li>";
         })
         .reduce(function (prev, item) {
             return prev + item;
