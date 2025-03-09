@@ -96,9 +96,18 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     color: grey;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: end;
 }
 
-.content-dashboard {
+.action img {
+    grid-column: 2 / 3;
+    height: 75px;
+}
+
+.content-hardskills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -126,4 +135,17 @@ body {
     grid-area: auto;
     margin: 8px;
 }
+
+/*.toggleable {*/
+/*    max-height: 0; !* Caché initialement *!*/
+/*    opacity: 0;*/
+/*    overflow: hidden;*/
+/*    transition: opacity 0.5s ease-in-out;*/
+/*}*/
+
+/*.toggleable.show {*/
+/*    max-height: 100%; !* Une hauteur suffisante pour le contenu *!*/
+/*    opacity: 100%;*/
+/*}*/
+
 

@@ -7,6 +7,8 @@ fetch('data.json')
     })
     .then(data => {
         console.log(data);
+        setHeader(data.profile);
+        feedProfileData(data.profile);
         feedLanguageSkill(data.hardskill[0]);
         feedFrameworkSkill(data.hardskill[1]);
         feedCmsSkill(data.hardskill[2]);
@@ -14,6 +16,30 @@ fetch('data.json')
     })
     .catch(error => console.error("Erreur de traitement du JSON :", error))
 ;
+
+function setHeader(profile) {
+
+    document.getElementById('fullname').innerHTML = profile.firstname +' '+ profile.lastname;
+    document.getElementById('image-profile').src = profile.image_profile;
+
+}
+
+function feedProfileData(profile){
+    // let el = document.getElementById('profile-data');
+    // el.innerHTML = "<span>"+ profile.address +"</span><br>";
+    // el.innerHTML+= "<span>"+ profile.zip +", "+ profile.city +"</span><br>";
+    // el.innerHTML+= "<span>"+ profile.email +"</span><br>";
+    // el.innerHTML+= "<span>"+ profile.phone +"</span><br>";
+    // el.innerHTML+= "<span>"+ profile.birthday +"</span>";
+
+
+
+
+    // engaged
+    // children
+    // driver_license
+    // vehicle
+}
 
 function feedLanguageSkill(language)
 {
@@ -76,8 +102,15 @@ function feedSoftwareSkill(software)
 {
     let el = document.getElementById('skill-software');
     el.innerHTML = (software.details)
-        .map(function (item) {
-            return "<li>"+ item +"</li>";
+        .map(function (obj) {
+            let url = obj.icon_url;
+            let label = obj.label;
+            let size = '';
+            if(typeof obj.icon_size != 'undefined') size = obj.icon_size;
+            return "<div class='card-icon'>" +
+                "<img class='' style='"+ size +"' src='" + url + "' alt='logo " + (label).toLowerCase() + "'/>" +
+                "<span>"+ label +"</span>" +
+                "</div>";
         })
         .reduce(function (prev, item) {
             return prev + item;

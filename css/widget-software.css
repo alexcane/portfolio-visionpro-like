@@ -1,0 +1,18 @@
+.skill-software {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7px;
+}
+
+.card-icon {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    /*background-color: rgba(40, 50, 65, 0.5); !* #283241  *!*/
+    background-color: hsla(0, 0%, 0%, 0.7);
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+}

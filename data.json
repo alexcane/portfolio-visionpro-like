@@ -5,12 +5,14 @@
     "address": "11 rue des places",
     "zip": "87800",
     "city": "Saint-Hilaire-les-Places",
+    "email": "alexandre@linkidev.fr",
     "phone": "06 70 95 22 92",
     "birthday": "1986-09-25",
     "engaged": true,
     "children" : [1,2,3],
     "driver_license": ["permis B"],
-    "vehicle": ["véhicule personnel"]
+    "vehicle": ["véhicule personnel"],
+    "image_profile": "https://media.licdn.com/dms/image/v2/D4E03AQEDMpS8XUI67w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693224302601?e=1747267200&v=beta&t=tEaNOI12zuAFjWGPkzbDefsIgA8n7N8DmEPGRyMu6Ac"
   },
   "softskill": [
     {
@@ -114,7 +116,7 @@
         {
           "label": "Principaux frameworks Apple et Android",
           "icon_url": "https://img.icons8.com/?size=18&id=79115&format=png",
-          "version": "from v5 to v10"
+          "version": "utilisation sur des side projects"
         }
       ]
     },{
@@ -144,14 +146,39 @@
     },{
       "title": "IDE / ERP / Divers",
       "details": [
-        "PhpStorm",
-        "SAGE 100c",
-        "Git",
-        "Xcode",
-        "Android Studio",
-        "Figma",
-        "Photoshop",
-        "Final Cut"
+        {
+          "label": "PhpStorm",
+          "icon_url": "https://img.icons8.com/?size=50&id=61466&format=png"
+        },
+        {
+          "label": "Git",
+          "icon_url": "https://img.icons8.com/?size=50&id=20906&format=png"
+        },
+        {
+          "label": "SAGE 100c",
+          "icon_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Sage-logo_svg.svg",
+          "icon_size": "height: 28px; width: 50px;"
+        },
+        {
+          "label": "Xcode",
+          "icon_url": "https://img.icons8.com/?size=50&id=51974&format=png"
+        },
+        {
+          "label": "Android Studio",
+          "icon_url": "https://img.icons8.com/?size=50&id=04OFrkjznvcd&format=png"
+        },
+        {
+          "label": "Figma",
+          "icon_url": "https://img.icons8.com/?size=50&id=zfHRZ6i1Wg0U&format=png"
+        },
+        {
+          "label": "Photoshop",
+          "icon_url": "https://img.icons8.com/?size=50&id=13677&format=png"
+        },
+        {
+          "label": "Final Cut",
+          "icon_url": "https://img.icons8.com/?size=50&id=uE6vbWOJAWgl&format=png"
+        }
       ]
     }
   ],

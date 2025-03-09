@@ -20,6 +20,7 @@
     grid-gap: 10px;
     text-align: center;
     align-items: center;
+    padding: 0 5px 0 5px;
     background-color: hsla(0, 0%, 100%, 0.1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -30,15 +31,18 @@
 
 .btn-tab {
     all: unset;
-    /*display: block;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /*width: 50px;*/
+    gap: 4px;
     height: 40px;
     background: transparent;
-    /*border: none;*/
     border-radius: 25px;
-    padding: 0;
+    padding: 0 4px 0 4px;
     cursor: pointer;
 }
 .btn-tab:hover {
     background-color: rgba(40, 50, 65, 0.5); /* #283241  */
+    border-bottom: 1px solid darkgrey;
 }
