@@ -25,12 +25,12 @@ function setHeader(profile) {
 }
 
 function feedProfileData(profile){
-    // let el = document.getElementById('profile-data');
-    // el.innerHTML = "<span>"+ profile.address +"</span><br>";
-    // el.innerHTML+= "<span>"+ profile.zip +", "+ profile.city +"</span><br>";
-    // el.innerHTML+= "<span>"+ profile.email +"</span><br>";
-    // el.innerHTML+= "<span>"+ profile.phone +"</span><br>";
-    // el.innerHTML+= "<span>"+ profile.birthday +"</span>";
+    let el = document.getElementById('profile-data');
+    el.innerHTML = "<span>"+ profile.address +"</span><br>";
+    el.innerHTML+= "<span>"+ profile.zip +", "+ profile.city +"</span><br>";
+    el.innerHTML+= "<span>"+ profile.email +"</span><br>";
+    el.innerHTML+= "<span>"+ profile.phone +"</span><br>";
+    el.innerHTML+= "<span>"+ profile.birthday +"</span>";
 
 
 
