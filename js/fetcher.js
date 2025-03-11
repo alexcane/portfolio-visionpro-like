@@ -24,21 +24,64 @@ function setHeader(profile) {
 
 }
 
+function getFullDate()
+{
+    const days = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
+    const months = ['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'];
+    const now = new Date();
+    const day = days[now.getDay()];
+    const date = now.getDate();
+    const month = (months[now.getMonth()]).toLowerCase();
+    const year = now.getFullYear();
+    return day + ' ' + date + ' ' + month + ' ' + year;
+}
+
+function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const timeString = `${hours}h${minutes}`;
+    document.getElementById('clock').textContent = "🕙 "+ timeString;
+}
+
+function getActionLocation() {
+    const now = new Date();
+    const hours = now.getHours();
+    const day = now.getDay();
+    switch (true){
+        case 0===day || 6===day: return 'en weekend, à la maison.'
+        case 16 < hours || 8 > hours: return 'dispo, à la maison.';
+        case 3===day && 12 >= hours: return 'en télétravail, à la maison.'
+        default: return 'au travail, Les Cars.'
+    }
+}
+
+
 function feedProfileData(profile){
+
     let el = document.getElementById('profile-data');
-    el.innerHTML = "<span>"+ profile.address +"</span><br>";
-    el.innerHTML+= "<span>"+ profile.zip +", "+ profile.city +"</span><br>";
-    el.innerHTML+= "<span>"+ profile.email +"</span><br>";
-    el.innerHTML+= "<span>"+ profile.phone +"</span><br>";
+    el.innerHTML = "<h3 class='header-profile'>📆 "+ getFullDate() +"<br>" +
+        "<span>📍 "+ getActionLocation() +"</span><br>" +
+        "<span id='clock'></span>" +
+        "</h3>" +
+        "<div class='body-profile'>" +
+        "<button class='btn-cta active glow-on-hover'>"+ profile.phone +"</button>" +
+        "<button class='btn-cta'>"+ profile.email +"</button>" +
+        // "<button class='btn-cta'>"+ profile.address +" "+ profile.zip +", "+ profile.city +"</button>" +
+        "</div>"
+    ;
+    el.innerHTML+= "<span>"+ profile.address +"</span>";
+    el.innerHTML+= "<span>"+ profile.zip +", "+ profile.city +"</span>";
+    el.innerHTML+= "<span></span>";
     el.innerHTML+= "<span>"+ profile.birthday +"</span>";
-
-
-
 
     // engaged
     // children
     // driver_license
     // vehicle
+
+    setInterval(updateTime, 60000);
+    updateTime();
 }
 
 function feedLanguageSkill(language)

@@ -16,7 +16,7 @@ document.addEventListener('mousemove', function(e) {
         window.requestAnimationFrame(function() {
             const xRatio = (e.clientX / window.innerWidth) - 0.5;
             const yRatio = (e.clientY / window.innerHeight) - 0.5;
-            const movementStrength = 50;
+            const movementStrength = 30;
             const xOffset = xRatio * movementStrength;
             const yOffset = yRatio * movementStrength;
             document.body.style.backgroundPosition =

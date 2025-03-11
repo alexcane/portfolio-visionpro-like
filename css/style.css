@@ -145,6 +145,27 @@ body {
     margin: 8px;
 }
 
+.btn-cta {
+    cursor: pointer;
+    border: none;
+    border-radius: 23px;
+    background-color: rgba(40, 50, 65, 0.5);
+    padding: 10px;
+    font-family: 'sfprodisplay', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-cta:hover {
+    background-color: #156fcd;
+}
+
+.btn-cta.active {
+    background-color: #156fcd;
+}
+
+
 /*.toggleable {*/
 /*    max-height: 0; !* Caché initialement *!*/
 /*    opacity: 0;*/
