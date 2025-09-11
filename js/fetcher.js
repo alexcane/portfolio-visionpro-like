@@ -65,7 +65,7 @@ function feedProfileData(profile){
         "<span id='clock'></span>" +
         "</h3>" +
         "<div class='body-profile'>" +
-        "<button class='btn-cta active glow-on-hover'>"+ profile.phone +"</button>" +
+        "<button class='btn-cta active'>"+ profile.phone +"</button>" +
         "<button class='btn-cta'>"+ profile.email +"</button>" +
         // "<button class='btn-cta'>"+ profile.address +" "+ profile.zip +", "+ profile.city +"</button>" +
         "</div>"
