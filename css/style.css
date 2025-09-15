@@ -105,15 +105,10 @@ body {
 .action img {
     grid-column: 2 / 3;
     height: 75px;
+    width: 75px;
     background-color: hsla(0, 0%, 0%, 0.7);
     border-radius: 50%;
     padding: 5px;
-}
-
-.action img:hover {
-    content: url("https://avatars.githubusercontent.com/u/12563984?v=4");
-    height: 75px;
-    width: 75px;
 }
 
 .content-hardskills {

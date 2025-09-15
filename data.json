@@ -12,36 +12,36 @@
     "children" : [1,2,3],
     "driver_license": ["permis B"],
     "vehicle": ["véhicule personnel"],
-    "image_profile": "https://media.licdn.com/dms/image/v2/D4E03AQEDMpS8XUI67w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1693224302601?e=1747267200&v=beta&t=tEaNOI12zuAFjWGPkzbDefsIgA8n7N8DmEPGRyMu6Ac"
+    "image_profile": "https://avatars.githubusercontent.com/u/12563984?v=4"
   },
   "softskill": [
     {
       "title": "Gestion de projet",
       "details": [
-        "prise de décision",
-        "responsabilité",
-        "lucidité"
+        "🎯 prise de décision",
+        "🛡️ responsabilité",
+        "🔄 planification agile"
       ]
     },{
       "title": "Relations humaines",
       "details": [
-        "facilité d'adaptation",
-        "négociation",
-        "réseau"
+        "🌊 facilité d'adaptation",
+        "🤝 esprit d'équipe",
+        "🧭 accompagnement métier"
       ]
     },{
       "title": "Vision économique",
       "details": [
-        "comptabilité",
-        "finance",
-        "juridique"
+        "📊 comptabilité",
+        "💎 création de valeur",
+        "📈 métriques business"
       ]
     },{
       "title": "Stratégie d'évolution",
       "details": [
-        "veille technologique",
-        "formation",
-        "curiosité"
+        "🔍 veille technologique",
+        "⬆️ montée en compétences",
+        "💡 innovation continue"
       ]
     }
   ],

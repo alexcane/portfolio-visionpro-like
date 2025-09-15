@@ -1,0 +1,159 @@
+/* Apple Vision Pro Easter Egg Styles */
+
+/* Container for particles - positioned absolutely to cover the entire viewport */
+.apple-easter-egg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+/* Individual particle styling with glassmorphism effect */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: floatParticle var(--duration) cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(31, 38, 135, 0.37),
+        inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+/* Large particles - white/blue gradient */
+.particle.large {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(147, 197, 253, 0.3) 50%,
+        rgba(99, 102, 241, 0.2) 100%);
+}
+
+/* Medium particles - blue/violet gradient */
+.particle.medium {
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(135deg,
+        rgba(147, 197, 253, 0.35) 0%,
+        rgba(99, 102, 241, 0.25) 50%,
+        rgba(139, 92, 246, 0.15) 100%);
+}
+
+/* Small particles - violet/white gradient */
+.particle.small {
+    width: 6px;
+    height: 6px;
+    background: linear-gradient(135deg,
+        rgba(139, 92, 246, 0.3) 0%,
+        rgba(196, 181, 253, 0.2) 50%,
+        rgba(255, 255, 255, 0.1) 100%);
+}
+
+/* Keyframes for particle floating animation */
+@keyframes floatParticle {
+    0% {
+        transform: translate(0, 0) scale(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+        transform: translate(var(--move-x-10), var(--move-y-10)) scale(0.3) rotate(36deg);
+    }
+
+    30% {
+        opacity: 0.8;
+        transform: translate(var(--move-x-30), var(--move-y-30)) scale(0.8) rotate(108deg);
+    }
+
+    60% {
+        opacity: 0.6;
+        transform: translate(var(--move-x-60), var(--move-y-60)) scale(1) rotate(216deg);
+    }
+
+    80% {
+        opacity: 0.3;
+        transform: translate(var(--move-x-80), var(--move-y-80)) scale(0.9) rotate(288deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(var(--move-x-100), var(--move-y-100)) scale(0.2) rotate(360deg);
+    }
+}
+
+/* Apple icon hover effect enhancement */
+.side-menu a#apple-easter-egg {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.side-menu a#apple-easter-egg:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+}
+
+.side-menu a#apple-easter-egg:active {
+    transform: scale(0.95);
+}
+
+/* Subtle glow animation for apple icon when clicked */
+.side-menu a#apple-easter-egg.clicked {
+    animation: appleGlow 0.6s ease-out;
+}
+
+@keyframes appleGlow {
+    0% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+    }
+    50% {
+        filter: drop-shadow(0 0 20px rgba(147, 197, 253, 0.8)) drop-shadow(0 0 30px rgba(99, 102, 241, 0.6));
+        transform: scale(1.15);
+    }
+    100% {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3));
+        transform: scale(1);
+    }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .particle.large {
+        width: 16px;
+        height: 16px;
+    }
+
+    .particle.medium {
+        width: 10px;
+        height: 10px;
+    }
+
+    .particle.small {
+        width: 5px;
+        height: 5px;
+    }
+}
+
+/* Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .particle {
+        animation: fadeInOut var(--duration) ease-in-out forwards;
+    }
+
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        50% { opacity: 0.6; }
+        100% { opacity: 0; }
+    }
+
+    .side-menu a#apple-easter-egg.clicked {
+        animation: none;
+        filter: drop-shadow(0 0 10px rgba(147, 197, 253, 0.5));
+    }
+}

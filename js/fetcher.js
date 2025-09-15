@@ -13,6 +13,10 @@ fetch('data.json')
         feedFrameworkSkill(data.hardskill[1]);
         feedCmsSkill(data.hardskill[2]);
         feedSoftwareSkill(data.hardskill[3]);
+        feedSoftskill(data.softskill);
+        feedExperiences(data.experience);
+        feedTrainingBackground(data.training_background);
+        feedMisc(data.langage, data.interests);
     })
     .catch(error => console.error("Erreur de traitement du JSON :", error))
 ;
@@ -159,4 +163,96 @@ function feedSoftwareSkill(software)
             return prev + item;
         })
     ;
+}
+
+function feedSoftskill(softskill)
+{
+    let el = document.getElementById('skill-softskill');
+    el.innerHTML = softskill
+        .map(function (obj) {
+            let title = obj.title;
+            let details = obj.details;
+            
+            let detailsHtml = details
+                .map(function(detail) {
+                    return "<span class='skill-detail'>" + detail + "</span>";
+                })
+                .join('');
+            
+            return "<div class='softskill-card'>" +
+                "<h6 class='softskill-title'>" + title + "</h6>" +
+                "<div class='softskill-details'>" + detailsHtml + "</div>" +
+                "</div>";
+        })
+        .reduce(function (prev, item) {
+            return prev + item;
+        })
+    ;
+}
+
+function feedExperiences(experiences)
+{
+    let el = document.getElementById('experience-list');
+    el.innerHTML = experiences
+        .map(function (obj) {
+            let period = obj.to ? obj.from + " - " + obj.to : obj.from;
+            let detailsHtml = obj.details
+                .map(function(detail) {
+                    return "<li class='experience-detail'>" + detail + "</li>";
+                })
+                .join('');
+            
+            return "<div class='experience-card'>" +
+                "<div class='experience-header'>" +
+                "<h6 class='experience-title'>" + obj.label + "</h6>" +
+                "<span class='experience-period'>" + period + "</span>" +
+                "</div>" +
+                "<span class='experience-location'>📍 " + obj.location + "</span>" +
+                "<ul class='experience-details'>" + detailsHtml + "</ul>" +
+                "</div>";
+        })
+        .join('')
+    ;
+}
+
+function feedTrainingBackground(training)
+{
+    let el = document.getElementById('training-list');
+    el.innerHTML = training
+        .map(function (obj) {
+            let period = obj.to ? obj.from + " - " + obj.to : obj.from;
+            
+            return "<div class='experience-card'>" +
+                "<div class='experience-header'>" +
+                "<h6 class='experience-title'>" + obj.label + "</h6>" +
+                "<span class='experience-period'>" + period + "</span>" +
+                "</div>" +
+                "<div class='experience-details'>" +
+                "<span class='experience-detail'>" + obj.details + "</span>" +
+                "</div>" +
+                "</div>";
+        })
+        .join('')
+    ;
+}
+
+function feedMisc(languages, interests)
+{
+    let languageEl = document.getElementById('language-list');
+    languageEl.innerHTML = languages
+        .map(function(lang) {
+            return "<div class='language-item'>" +
+                "<span class='language-flag'>" + lang.flag + "</span>" +
+                "<span class='language-name'>" + lang.label + "</span>" +
+                "<span class='language-level'>" + lang.level + "</span>" +
+                "</div>";
+        })
+        .join('');
+    
+    let interestsEl = document.getElementById('interests-list');
+    interestsEl.innerHTML = interests
+        .map(function(interest) {
+            return "<div class='interest-item'>" + interest + "</div>";
+        })
+        .join('');
 }
