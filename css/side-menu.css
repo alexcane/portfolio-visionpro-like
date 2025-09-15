@@ -22,7 +22,27 @@
     font-size: 1.5rem;
     color: darkgrey;
 }
+.side-menu hr {
+    width: 80%;
+    border-top: 1px solid darkgrey;
+}
+.side-menu a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 40px;*/
+    /*height: 40px;*/
+    border-radius: 50%;
+    padding: 14px 4px;
+    /*margin: 2px 0;*/
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
 
-.side-menu a:nth-child(1) {
+
+.side-menu a:hover,
+.side-menu a.active {
+    background-color: rgba(40, 50, 65, 0.5);
     border-bottom: 2px solid darkgrey;
 }

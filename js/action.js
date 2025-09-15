@@ -4,6 +4,29 @@ function showContent(target){
         content.style.display = 'none';
         // content.classList.remove('show');
     }
+    
+    // Remove active class from all buttons and sidebar links
+    let buttonList = document.getElementsByClassName('btn-tab');
+    for (let button of buttonList) {
+        button.classList.remove('active');
+    }
+    
+    // Remove active class from sidebar links
+    let sidebarLinks = document.querySelectorAll('.side-menu a');
+    for (let link of sidebarLinks) {
+        link.classList.remove('active');
+    }
+    
+    // Add active class to clicked element
+    if (event && event.target) {
+        event.target.classList.add('active');
+    }
+    
+    // Special handling for profile content (home link)
+    if (target === 'profile') {
+        document.getElementById('home-link').classList.add('active');
+    }
+    
     // let active = document.getElementById('content-'+target);
     // active.style.display = 'grid';
     // active.classList.add('show');
